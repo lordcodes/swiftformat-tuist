@@ -2,4 +2,4 @@
 
 ## 0.1.0
 
-- Initial release of Swift Linters
+- Initial release of SwiftFormat Tuist Plugin

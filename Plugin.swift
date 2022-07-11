@@ -2,4 +2,4 @@
 
 import ProjectDescription
 
-let plugin = Plugin(name: "linters")
+let plugin = Plugin(name: "tuist-plugin-swiftformat")
