@@ -16,9 +16,9 @@ jobs:
       name: 'Cache .build folder'
       with:
         path: .build
-        key: ${{ runner.os }}-spm-${{ hashFiles('**/Package.resolved') }}
+        key: ${{ runner.os }}-spm-v1-${{ hashFiles('**/Package.resolved') }}
         restore-keys: |
-          ${{ runner.os }}-spm-
+          ${{ runner.os }}-spm-v1-
 
     - name: Setup Swift
       uses: swift-actions/setup-swift@v1
