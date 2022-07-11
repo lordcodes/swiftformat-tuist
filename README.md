@@ -1,8 +1,4 @@
 <p align="center">
-    <img src="Art/logo.png" width="500" max-width="90%" alt="SwiftFormat Tuist Plugin" />
-</p>
-
-<p align="center">
     <img src="https://img.shields.io/badge/Swift-5.6-orange.svg" />
     <a href="https://swift.org/package-manager">
         <img src="https://img.shields.io/badge/swiftpm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
@@ -24,10 +20,6 @@ This is a **SwiftFormat Tuist Plugin** - a plugin for Tuist to format Swift proj
 <p align="center">
     <a href="#features">Features</a> • <a href="#install">Install</a> • <a href="#usage">Usage</a> • <a href="#contributing-or-help">Contributing</a>
 </p>
-
-## Features
-
-&nbsp;
 
 ## Install
 
@@ -51,19 +43,20 @@ let config = Config(
 
 ### 🖥 Via the Tuist Plugin
 
-Run SwiftFormat Tusit Plugin's tasks via Tuist.
+Run SwiftFormat Tuist Plugin's tasks via Tuist.
 
 ```terminal
-USAGE: tuist format [subcommand] [-q|--quiet]
-
-SUBCOMMANDS:
-  version    Print version.
-
-OPTIONS:
-  -q, --quiet             Silence any output except errors 
+USAGE: tuist format [SwiftFormat arguments]
 ```
 
-You can obtain help using `tuist format --help` and also obtain help for each subcommand using `tuist format <subcommand> --help`.
+The plugin is a lightweight wrapper around the SwiftFormat command-line tool. It will run from the current directory and specify the current directory as the first input argument to SwiftFormat. 
+
+For example, a common set up would be:
+
+- Create a `.swiftformat` config file in the root of the project.
+- List all the files/directories to skip using `--excludes`.
+- From root run `tuist format` to format code.
+- From root run `tuist format --lint` to check if code is formatted.
 
 ## Contributing or Help
 
