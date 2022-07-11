@@ -1,10 +1,10 @@
 # Contributing to SwiftFormat Tuist Plugin
 
-If this is your first time contributing to Swift Linters, please have a read through our [Code of Conduct](https://github.com/lordcodes/tuist-plugin-swiftformat/blob/master/CODE_OF_CONDUCT.md).
+If this is your first time contributing to SwiftFormat Tuist Plugin, please have a read through our [Code of Conduct](https://github.com/lordcodes/tuist-plugin-swiftformat/blob/master/CODE_OF_CONDUCT.md).
 
 ## Reporting a bug
 
-* Compare the version you have installed with `tuist linters version` and check it against [the latest version](https://github.com/lordcodes/tuist-plugin-swiftformat/releases).
+* Ensure you have [the latest version](https://github.com/lordcodes/tuist-plugin-swiftformat/releases).
 * Check the issue hasn't [already been reported](https://github.com/lordcodes/tuist-plugin-swiftformat/issues).
 * Check there isn't already an [open pull request](https://github.com/lordcodes/tuist-plugin-swiftformat/pulls) to fix the issue.
 * [Open an issue](https://github.com/lordcodes/tuist-plugin-swiftformat/issues/new/choose) providing as much information as possible.
@@ -23,6 +23,6 @@ If this is your first time contributing to Swift Linters, please have a read thr
 * Clone the repository.
 * To build: build in Xcode or run `tuist plugin build`.
 * To test: test in Xcode or run `tuist plugin test`.
-* To run locally, navigate to the project you want to run on and then run `tuist plugin run tuist-linters {COMMAND} --path /path/to/tuist-plugin-swiftformat`.
+* To run locally, navigate to the project you want to run on and then run `tuist plugin run tuist-format {ARGUMENTS} --path /path/to/tuist-plugin-swiftformat`.
 
 Thanks!

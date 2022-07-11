@@ -1,9 +1,9 @@
-<!-- Thanks for your contribution to *Swift Linters*! Please check the boxes below before opening the pull request, you do this by putting an x in the box like this: [x]. Thank you! -->
+<!-- Thanks for your contribution to *SwiftFormat Tuist Plugin*! Please check the boxes below before opening the pull request, you do this by putting an x in the box like this: [x]. Thank you! -->
 
 ### Checklist
 
-- [ ] I've read the [guide for contributing](https://github.com/lordcodes/swift-linters/blob/master/CONTRIBUTING.md).
-- [ ] I've checked there are no other [open pull requests](https://github.com/lordcodes/swift-linters/pulls) for the same change.
+- [ ] I've read the [guide for contributing](https://github.com/lordcodes/tuist-plugin-swiftformat/blob/master/CONTRIBUTING.md).
+- [ ] I've checked there are no other [open pull requests](https://github.com/lordcodes/tuist-plugin-swiftformat/pulls) for the same change.
 - [ ] I've updated documentation if needed.
 - [ ] I've tested all changes are working as intended.
 

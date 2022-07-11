@@ -40,9 +40,9 @@ jobs:
       run: echo '::set-output name=version::${{ steps.calculated_semvers.outputs.minor }}${{ github.event.inputs.version }}'
       id: semvers
 
-    - name: Update Swift Linters version
+    - name: Update version in code
       run: |
-        sed -i -e "s/current = \".*\"/current = \"${{ steps.semvers.outputs.version }}\"/g" Sources/LintersKit/Version/Version.swift
+        sed -i -e "s/current = \".*\"/current = \"${{ steps.semvers.outputs.version }}\"/g" Sources/SwiftFormatTuistPlugin/Version.swift
 
     - name: Build changelog
       id: changelog
@@ -64,7 +64,7 @@ jobs:
       uses: stefanzweifel/git-auto-commit-action@v4
       if: ${{ github.event.inputs.publish == 'true' }}
       with:
-        commit_message: "[Release] Swift Linters ${{ steps.semvers.outputs.version }}"
+        commit_message: "[Release] ${{ steps.semvers.outputs.version }}"
 
   release:
     runs-on: macos-latest
@@ -95,7 +95,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         token: "${{ secrets.GITHUB_TOKEN }}"
-        files: linters.tuist-plugin.zip
+        files: tuist-plugin-swiftformat.tuist-plugin.zip
         name: ${{ needs.prepare-release.outputs.version }}
         tag_name: v${{ needs.prepare-release.outputs.version }}
         body: ${{ needs.prepare-release.outputs.changelog }}

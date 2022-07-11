@@ -13,5 +13,5 @@
         "labels": ["changelog:fixed"]
       }
     ],
-    "pr_template": "- ${{TITLE}} [#${{NUMBER}}](https://github.com/lordcodes/swift-linters/pull/${{NUMBER}}) by [@${{AUTHOR}}](https://github.com/${{AUTHOR}})"
+    "pr_template": "- ${{TITLE}} [#${{NUMBER}}](https://github.com/lordcodes/tuist-plugin-swiftformat/pull/${{NUMBER}}) by [@${{AUTHOR}}](https://github.com/${{AUTHOR}})"
   }
