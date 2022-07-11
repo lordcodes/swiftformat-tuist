@@ -18,7 +18,7 @@ This is a **SwiftFormat Tuist Plugin** - a plugin for Tuist to format Swift proj
 &nbsp;
 
 <p align="center">
-    <a href="#features">Features</a> • <a href="#install">Install</a> • <a href="#usage">Usage</a> • <a href="#contributing-or-help">Contributing</a>
+    <a href="#install">Install</a> • <a href="#usage">Usage</a> • <a href="#contributing-or-help">Contributing</a>
 </p>
 
 ## Install
