@@ -32,7 +32,7 @@ import ProjectDescription
 
 let config = Config(
     plugins: [
-        .git(url: "https://github.com/lordcodes/tuist-plugin-swiftformat.git", tag: "v0.1.0")
+        .git(url: "https://github.com/lordcodes/tuist-plugin-swiftformat.git", tag: "[VERSION]")
     ]
 )
 ```
