@@ -2,4 +2,4 @@
 
 import ProjectDescription
 
-let plugin = Plugin(name: "tuist-plugin-swiftformat")
+let plugin = Plugin(name: "swiftformat-tuist")

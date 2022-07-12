@@ -3,8 +3,8 @@
     <a href="https://swift.org/package-manager">
         <img src="https://img.shields.io/badge/swiftpm-compatible-brightgreen.svg?style=flat" alt="Swift Package Manager" />
     </a>
-     <a href="https://github.com/lordcodes/tuist-plugin-swiftformat/releases/latest">
-         <img src="https://img.shields.io/github/release/lordcodes/tuist-plugin-swiftformat.svg?style=flat" alt="Latest release" />
+     <a href="https://github.com/lordcodes/swiftformat-tuist/releases/latest">
+         <img src="https://img.shields.io/github/release/lordcodes/swiftformat-tuist.svg?style=flat" alt="Latest release" />
      </a>
     <a href="https://twitter.com/lordcodes">
         <img src="https://img.shields.io/badge/twitter-@lordcodes-blue.svg?style=flat" alt="Twitter: @lordcodes" />
@@ -23,7 +23,7 @@ This is a **SwiftFormat Tuist Plugin** - a plugin for Tuist to format Swift proj
 
 ## Install
 
-To set up as a Tuist plugin in your project simply follow the [Tuist plugin install instructions](https://docs.tuist.io/plugins/using-plugins/) using the [latest version](https://github.com/lordcodes/tuist-plugin-swiftformat/releases/latest).
+To set up as a Tuist plugin in your project simply follow the [Tuist plugin install instructions](https://docs.tuist.io/plugins/using-plugins/) using the [latest version](https://github.com/lordcodes/swiftformat-tuist/releases/latest).
 
 Add the plugin to `Config.swift`.
 
@@ -32,7 +32,7 @@ import ProjectDescription
 
 let config = Config(
     plugins: [
-        .git(url: "https://github.com/lordcodes/tuist-plugin-swiftformat.git", tag: "[VERSION]")
+        .git(url: "https://github.com/lordcodes/swiftformat-tuist.git", tag: "[VERSION]")
     ]
 )
 ```
@@ -60,6 +60,6 @@ For example, a common set up would be:
 
 ## Contributing or Help
 
-If you notice any bugs or have a new feature to suggest, please check out the [contributing guide](https://github.com/lordcodes/tuist-plugin-swiftformat/blob/master/CONTRIBUTING.md). If you want to make changes, please make sure to discuss anything big before putting in the effort of creating the PR.
+If you notice any bugs or have a new feature to suggest, please check out the [contributing guide](https://github.com/lordcodes/swiftformat-tuist/blob/master/CONTRIBUTING.md). If you want to make changes, please make sure to discuss anything big before putting in the effort of creating the PR.
 
 To reach out, please contact [@lordcodes on Twitter](https://twitter.com/lordcodes).

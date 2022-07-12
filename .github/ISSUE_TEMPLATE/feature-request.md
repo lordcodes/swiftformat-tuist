@@ -13,9 +13,9 @@ labels: type:enhancement
 ### Checklist
 <!-- Please check the boxes below, you do this by putting an x in the box like this: [x]. Thank you! -->
 
-- [ ] I've read the [guide for contributing](https://github.com/lordcodes/tuist-plugin-swiftformat/blob/master/CONTRIBUTING.md).
-- [ ] I've checked there are no other [open pull requests](https://github.com/lordcodes/tuist-plugin-swiftformat/pulls) for the feature.
-- [ ] I've checked there are no other [open issues](https://github.com/lordcodes/tuist-plugin-swiftformat/issues) for the same feature.
+- [ ] I've read the [guide for contributing](https://github.com/lordcodes/swiftformat-tuist/blob/master/CONTRIBUTING.md).
+- [ ] I've checked there are no other [open pull requests](https://github.com/lordcodes/swiftformat-tuist/pulls) for the feature.
+- [ ] I've checked there are no other [open issues](https://github.com/lordcodes/swiftformat-tuist/issues) for the same feature.
 
 ### Additional context
 <!-- Please add any other information about the idea here.  -->

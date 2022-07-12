@@ -95,7 +95,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         token: "${{ secrets.GITHUB_TOKEN }}"
-        files: tuist-plugin-swiftformat.tuist-plugin.zip
+        files: swiftformat-tuist.tuist-plugin.zip
         name: ${{ needs.prepare-release.outputs.version }}
         tag_name: v${{ needs.prepare-release.outputs.version }}
         body: ${{ needs.prepare-release.outputs.changelog }}

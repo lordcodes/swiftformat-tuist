@@ -2,8 +2,8 @@
 
 ### Checklist
 
-- [ ] I've read the [guide for contributing](https://github.com/lordcodes/tuist-plugin-swiftformat/blob/master/CONTRIBUTING.md).
-- [ ] I've checked there are no other [open pull requests](https://github.com/lordcodes/tuist-plugin-swiftformat/pulls) for the same change.
+- [ ] I've read the [guide for contributing](https://github.com/lordcodes/swiftformat-tuist/blob/master/CONTRIBUTING.md).
+- [ ] I've checked there are no other [open pull requests](https://github.com/lordcodes/swiftformat-tuist/pulls) for the same change.
 - [ ] I've updated documentation if needed.
 - [ ] I've tested all changes are working as intended.
 
