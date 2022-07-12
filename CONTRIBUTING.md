@@ -1,6 +1,6 @@
-# Contributing to SwiftFormat Tuist Plugin
+# Contributing to SwiftFormat Tuist
 
-If this is your first time contributing to SwiftFormat Tuist Plugin, please have a read through our [Code of Conduct](https://github.com/lordcodes/swiftformat-tuist/blob/master/CODE_OF_CONDUCT.md).
+If this is your first time contributing to SwiftFormat Tuist, please have a read through our [Code of Conduct](https://github.com/lordcodes/swiftformat-tuist/blob/master/CODE_OF_CONDUCT.md).
 
 ## Reporting a bug
 

@@ -13,7 +13,7 @@
 
 ---
 
-This is a **SwiftFormat Tuist Plugin** - a plugin for Tuist to format Swift projects using [SwiftFormat](https://github.com/nicklockwood/SwiftFormat).
+This is a **SwiftFormat Tuist** - a plugin for Tuist to format Swift projects using [SwiftFormat](https://github.com/nicklockwood/SwiftFormat).
 
 &nbsp;
 
@@ -43,7 +43,7 @@ let config = Config(
 
 ### 🖥 Via the Tuist Plugin
 
-Run SwiftFormat Tuist Plugin's tasks via Tuist.
+Run SwiftFormat Tuist's tasks via Tuist.
 
 ```terminal
 USAGE: tuist format [SwiftFormat arguments]

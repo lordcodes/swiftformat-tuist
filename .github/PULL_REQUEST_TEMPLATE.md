@@ -1,4 +1,4 @@
-<!-- Thanks for your contribution to *SwiftFormat Tuist Plugin*! Please check the boxes below before opening the pull request, you do this by putting an x in the box like this: [x]. Thank you! -->
+<!-- Thanks for your contribution to *SwiftFormat Tuist*! Please check the boxes below before opening the pull request, you do this by putting an x in the box like this: [x]. Thank you! -->
 
 ### Checklist
 
