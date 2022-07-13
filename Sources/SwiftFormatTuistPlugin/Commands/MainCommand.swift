@@ -35,9 +35,9 @@ struct MainCommand {
 
     private func printHelp() {
         let help = """
-        USAGE: tuist format [<subcommand>]
+        USAGE: tuist swiftformat [<subcommand>]
 
-        DEFAULT SUBCOMMAND
+        DEFAULT SUBCOMMAND:
           Run SwiftFormat in format mode.
 
         SUBCOMMANDS:
@@ -46,7 +46,7 @@ struct MainCommand {
           help              Print this help information.
           version           Print SwiftFormat Tuist version.
 
-        See 'tuist format <subcommand> --help' for detailed help.
+        See 'tuist swiftformat <subcommand> --help' for detailed help.
 
         """
         print(help)

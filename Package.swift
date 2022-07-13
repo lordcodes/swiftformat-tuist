@@ -3,11 +3,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "tuist-format",
+    name: "tuist-swiftformat",
     platforms: [.macOS(.v11)],
     products: [
         .executable(
-            name: "tuist-format",
+            name: "tuist-swiftformat",
             targets: ["SwiftFormatTuistPlugin"]
         )
     ],

@@ -23,6 +23,6 @@ If this is your first time contributing to SwiftFormat Tuist, please have a read
 * Clone the repository.
 * To build: build in Xcode or run `tuist plugin build`.
 * To test: test in Xcode or run `tuist plugin test`.
-* To run locally, navigate to the project you want to run on and then run `tuist plugin run tuist-format {ARGUMENTS} --path /path/to/swiftformat-tuist`.
+* To run locally, navigate to the project you want to run on and then run `tuist plugin run tuist-swiftformat {ARGUMENTS} --path /path/to/swiftformat-tuist`.
 
 Thanks!

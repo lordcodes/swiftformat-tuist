@@ -46,17 +46,29 @@ let config = Config(
 Run SwiftFormat Tuist's tasks via Tuist.
 
 ```terminal
-USAGE: tuist format [SwiftFormat arguments]
+USAGE: tuist swiftformat [<subcommand>]
+
+DEFAULT SUBCOMMAND:
+    Run SwiftFormat in format mode.
+
+SUBCOMMANDS:
+    format            Run SwiftFormat in format mode.
+    lint              Run SwiftFormat in lint mode.
+    help              Print this help information.
+    version           Print SwiftFormat Tuist version.
+
+See 'tuist swiftformat <subcommand> --help' for detailed help.
+
 ```
 
-The plugin is a lightweight wrapper around the SwiftFormat command-line tool. It will run from the current directory and specify the current directory as the first input argument to SwiftFormat. 
+The plugin is a lightweight wrapper around the SwiftFormat command-line tool. If no files are specified to lint, it will pass the current directory as the first argument to SwiftFormat.
 
 For example, a common set up would be:
 
 - Create a `.swiftformat` config file in the root of the project.
 - List all the files/directories to skip using `--excludes`.
-- From root run `tuist format` to format code.
-- From root run `tuist format --lint` to check if code is formatted.
+- From root run `tuist swiftformat` to format code.
+- From root run `tuist swiftformat lint` to check if code is formatted.
 
 ## Contributing or Help
 
