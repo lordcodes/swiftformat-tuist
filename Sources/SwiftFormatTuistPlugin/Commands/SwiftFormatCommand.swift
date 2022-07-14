@@ -41,9 +41,11 @@ struct SwiftFormatCommand {
     private func cliArguments() -> [String] {
         var outputArguments = arguments.filter { $0 != "--lint" }
         if lint {
-            outputArguments += ["--lint"]
+            outputArguments = ["--lint"] + outputArguments
         }
-        if outputArguments.allSatisfy({ $0.starts(with: "--") || $0.starts(with: "-") }) {
+        if outputArguments.isEmpty {
+            outputArguments = [FileManager.default.currentDirectoryPath]
+        } else if let argument = outputArguments.first, argument.starts(with: "--") || argument.starts(with: "-") {
             outputArguments = [FileManager.default.currentDirectoryPath] + outputArguments
         }
         let arguments = [programName] + outputArguments
