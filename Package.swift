@@ -9,7 +9,7 @@ let package = Package(
         .executable(
             name: "tuist-swiftformat",
             targets: ["SwiftFormatTuistPlugin"]
-        )
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/nicklockwood/SwiftFormat", .exact("0.49.11")),

@@ -6,7 +6,7 @@ struct MainCommand {
     let command: CommandArguments
 
     init(arguments: [String]) {
-        self.command = ArgumentProcessor.parse(arguments: arguments)
+        command = ArgumentProcessor.parse(arguments: arguments)
     }
 
     func run() {
