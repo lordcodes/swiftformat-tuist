@@ -39,20 +39,23 @@ struct SwiftFormatCommand {
     }
 
     private func cliArguments() -> [String] {
-        var outputArguments = arguments.filter { $0 != "--lint" }
+        let commandArguments = arguments.filter { $0 != "--lint" }
+        var outputArguments = [String]()
+        outputArguments.append(programName)
+        if commandArguments.isEmpty {
+            outputArguments.append(FileManager.default.currentDirectoryPath)
+        } else if let argument = commandArguments.first, argument.starts(with: "--") || argument.starts(with: "-") {
+            outputArguments.append(FileManager.default.currentDirectoryPath)
+        }
         if lint {
-            outputArguments = ["--lint"] + outputArguments
+            outputArguments.append("--lint")
         }
-        if outputArguments.isEmpty {
-            outputArguments = [FileManager.default.currentDirectoryPath]
-        } else if let argument = outputArguments.first, argument.starts(with: "--") || argument.starts(with: "-") {
-            outputArguments = [FileManager.default.currentDirectoryPath] + outputArguments
+        outputArguments.append(contentsOf: commandArguments)
+
+        if !outputArguments.contains(where: { $0 == "-q" || $0 == "--quiet" }) {
+            print("Running SwiftFormat with arguments: \(outputArguments)")
         }
-        let arguments = [programName] + outputArguments
-        if !arguments.contains(where: { $0 == "-q" || $0 == "--quiet" }) {
-            print("Running SwiftFormat with arguments: \(arguments)")
-        }
-        return arguments
+        return outputArguments
     }
 
     static func currentVersion() -> String {
