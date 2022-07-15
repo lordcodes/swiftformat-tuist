@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.3.0 - 2022-07-15
+
+### Fixed
+
+- Fix using --report argument [#1](https://github.com/lordcodes/swiftformat-tuist/pull/1) by [@lordcodes](https://github.com/lordcodes)
+
 ## 0.2.0 - 2022-07-14
 
 ### Changed
