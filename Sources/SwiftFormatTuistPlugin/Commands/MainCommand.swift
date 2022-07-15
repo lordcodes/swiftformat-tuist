@@ -1,36 +1,34 @@
 // Copyright © 2022 Andrew Lord.
 
+import SwiftFormatKit
+
 struct MainCommand {
-    let subcommand: String?
-    let arguments: [String]
+    let command: CommandArguments
 
     init(arguments: [String]) {
-        if MainCommand.validSubcommands.contains(arguments.first ?? "") {
-            subcommand = arguments.first
-            self.arguments = Array(arguments.dropFirst())
-        } else {
-            subcommand = nil
-            self.arguments = arguments
-        }
+        command = ArgumentProcessor.parse(arguments: arguments)
     }
 
     func run() {
-        switch subcommand {
-        case nil, "format":
+        let isQuiet = command.arguments.contains { $0 == "--quiet" || $0 == "-q" }
+        SwiftFormatKit.shared.printer = ConsolePrinter(quiet: isQuiet)
+
+        switch command.subcommand {
+        case "format":
             runSwiftFormat(lint: false)
         case "help":
             printHelp()
         case "lint":
             runSwiftFormat(lint: true)
         case "version":
-            VersionCommand(arguments: arguments).run()
+            VersionCommand(arguments: command.arguments).run()
         default:
-            runSwiftFormat(lint: false)
+            printHelp()
         }
     }
 
     private func runSwiftFormat(lint: Bool) {
-        SwiftFormatCommand(arguments: arguments, lint: lint).run()
+        SwiftFormatCommand(command: command, lint: lint).run()
     }
 
     private func printHelp() {
@@ -51,6 +49,4 @@ struct MainCommand {
         """
         print(help)
     }
-
-    private static let validSubcommands: [String] = ["format", "help", "lint", "version"]
 }

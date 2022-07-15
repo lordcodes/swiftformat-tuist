@@ -19,7 +19,7 @@ struct VersionCommand {
         let help = """
         OVERVIEW: Print version
 
-        USAGE: \(programName) version
+        USAGE: tuist swiftformat version
 
         OPTIONS:
           -h, --help              Show help information.

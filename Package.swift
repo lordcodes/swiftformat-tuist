@@ -9,7 +9,7 @@ let package = Package(
         .executable(
             name: "tuist-swiftformat",
             targets: ["SwiftFormatTuistPlugin"]
-        )
+        ),
     ],
     dependencies: [
         .package(url: "https://github.com/nicklockwood/SwiftFormat", .exact("0.49.11")),
@@ -18,7 +18,19 @@ let package = Package(
         .executableTarget(
             name: "SwiftFormatTuistPlugin",
             dependencies: [
+                "SwiftFormatKit",
+            ]
+        ),
+        .target(
+            name: "SwiftFormatKit",
+            dependencies: [
                 .product(name: "SwiftFormat", package: "SwiftFormat"),
+            ]
+        ),
+        .testTarget(
+            name: "SwiftFormatKitTests",
+            dependencies: [
+                "SwiftFormatKit",
             ]
         ),
     ]
