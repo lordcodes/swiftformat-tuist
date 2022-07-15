@@ -18,7 +18,19 @@ let package = Package(
         .executableTarget(
             name: "SwiftFormatTuistPlugin",
             dependencies: [
+                "SwiftFormatKit",
+            ]
+        ),
+        .target(
+            name: "SwiftFormatKit",
+            dependencies: [
                 .product(name: "SwiftFormat", package: "SwiftFormat"),
+            ]
+        ),
+        .testTarget(
+            name: "SwiftFormatKitTests",
+            dependencies: [
+                "SwiftFormatKit",
             ]
         ),
     ]
