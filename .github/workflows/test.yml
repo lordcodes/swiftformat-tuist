@@ -49,11 +49,6 @@ jobs:
       run: |
         tuist fetch
     
-    - name: SwiftFormat
-      run: |
-        mkdir -p .build/reports
-        tuist swiftformat lint --report .build/reports/swiftformat.json
-    
     - name: SwiftLint
       run: |
         mkdir -p .build/reports
