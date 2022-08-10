@@ -6,7 +6,9 @@
 
 ## 0.4.0 - 2022-07-17
 
-- no changes
+### Changed
+
+- Update SwiftFormat to 0.49.14.
 
 ## 0.3.0 - 2022-07-15
 
