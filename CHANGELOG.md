@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.6.0 - 2022-09-01
+
+- no changes
+
 ## 0.5.0 - 2022-08-10
 
 - no changes
