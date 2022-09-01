@@ -2,17 +2,21 @@
 
 ## 0.6.0 - 2022-09-01
 
-- no changes
+### Changed
+
+- Update SwiftFormat 0.49.18
 
 ## 0.5.0 - 2022-08-10
 
-- no changes
+### Changed
+
+- Update SwiftFormat 0.49.14
 
 ## 0.4.0 - 2022-07-17
 
 ### Changed
 
-- Update SwiftFormat to 0.49.14.
+- Update SwiftFormat to 0.49.13
 
 ## 0.3.0 - 2022-07-15
 
