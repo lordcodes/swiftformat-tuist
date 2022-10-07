@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.7.0 - 2022-10-07
+
+### Changed
+
+- Update SwiftFormat to 0.50.1 [#4](https://github.com/lordcodes/swiftformat-tuist/pull/4) by [@lordcodes](https://github.com/lordcodes)
+
 ## 0.6.0 - 2022-09-01
 
 ### Changed
